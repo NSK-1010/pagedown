@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script src="settings/setting.js"></script>
+        <title></title>
+        <script>document.title = site_title;</script>
+        <script src="https://cdn.jsdelivr.net/npm/js-yaml@latest/js-yaml.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
+        <script src="js/yamlfront.js"></script>
+        <meta name="description" content="">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            document.write('<link rel="stylesheet" href="themes/' + site_theme + '/style.css">')
+        </script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="root/style-root.css">
+    </head>
+    <body>
+        <header>
+            <div id="site_header">
+                <div id="nav-drawer">
+                    <input id="nav-input" type="checkbox" class="nav-unshown">
+                    <label id="nav-open" for="nav-input"><span></span></label>
+                    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                    <div id="nav-content">
+                        <h3>
+                            <script>
+                                document.write(site_title)
+                            </script>
+                        </h3>
+                        <script>
+                            for (  var i = 0;  i < site_menu_pages.length;  i++  ) {
+                                document.write('<p><a href="' + site_menu_link[ i ] + '">' + site_menu_pages[ i ] + '</a></p>')
+                            }
+                        </script>
+                    </div>
+                </div>
+                <h1 class="site-title">
+                    <a href="./?src=/">
+                    <script>
+                            document.write(site_title);
+                    </script>
+                    </a>
+                </h1>
+                <p class="site-description">
+                    <script>
+                        document.write(site_description);
+                        if (site_description == null) {
+                            documents.getElementByClass("site-description").style.display = "none" ;
+                        }
+                    </script>
+                </p>
+                <nav class="site-menu">
+                    <ul class="site-menu-links">
+                        <script>
+                            for (  var i = 0;  i < site_menu_pages.length;  i++  ) {
+                                document.write('<li><a href="' + site_menu_link[ i ] + '">' + site_menu_pages[ i ] + '</a></li>')
+                            }
+                        </script>
+                    </ul>
+                </nav>
+            </div>
+            <div id="custom_header">
+                <script src="custom/custom-header.html"></script>
+            </div>
+        </header>
+        <main>
+            <div id="entry">
+                <script src="js/get.js"></script>
+            </div>
+            <div id="custom_sidebar">
+                <script src="custom/custom-sidebar.html"></script>
+            </div>
+        </main>
+        <footer>
+        <div id="custom_footer">
+                <script src="custom/custom-footer.html"></script>
+        </div>
+            <nav class="footer-copyright">
+                <p class="footer-site-title">
+                    <a href="./">
+                    <script>
+                        document.write(site_title);
+                    </script>
+                    </a>
+                </p>
+                <p>Powered&nbsp;by&nbsp;Pagedown</p>
+                <script>
+                    var yeardate = new Date();
+                    document.write("<p>&copy;" + start_year + "&nbsp;-&nbsp;" + yeardate.getFullYear() + "&nbsp;" + site_writer + "</p>");
+                </script>
+            </nav>
+        </footer>
+    </body>
+</html>

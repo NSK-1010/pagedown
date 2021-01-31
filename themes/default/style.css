@@ -1,0 +1,145 @@
+/* 全体 */
+html, body {
+    font-family: 'Helvetica Neue','Helvetica','Arial',YuGothic,'Yu Gothic','Hiragino Sans','ヒラギノ角ゴシック','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+    font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h6 {
+    font-size: 1.1em;
+}
+
+pre, code, kbd, samp {
+    font-family: 'Monaco','Consolas','Menlo','Courier','ＭＳ ゴシック',monospace;
+}
+
+a, a:link {
+    color: #1e90ff;
+    text-decoration-color: #1e90ff;
+}
+
+a:visited {
+    color: #ee82ee;
+    text-decoration-color: #ee82ee;
+}
+
+a:hover {
+    color: #0000cd;
+    text-decoration-color: #0000cd;
+}
+
+a:active {
+    color: #191970;
+    text-decoration-color: #191970;
+}
+
+/* headerとfooter */
+#site_header {
+    border-bottom: 0.01em solid #121212;
+    width: 100%;
+    background-color: #FFFFFF;
+    top: 0;
+}
+
+.site-title, .site-description, .site-menu, .footer-copyright {
+    text-align: center;
+}
+
+.site-description, .footer-copyright {
+    font-size: 0.8em;
+}
+
+.site-menu ul {
+    width: 90%;
+    margin: auto;
+}
+
+.site-menu li{
+    display: inline-block;
+    padding: 0.5em
+}
+
+.site-title, .site-title a, .site-menu-links a, #nav-content a{
+    color: #121212;
+    text-decoration: none;
+}
+
+.footer-site-title, .footer-site-title a {
+    color: #FFFFFF;
+    text-decoration-color: #FFFFFF;
+}
+
+.footer-copyright {
+    padding: 0.5em;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+/* entryの中身 */
+#entry {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border: 0.1em solid #dddddd;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#entry_header {
+    border-bottom: 0.05em solid #dddddd;
+}
+
+.entry_title {
+    font-size: 1.9em;
+    font-weight: bold;
+}
+
+.entry_content_date {
+    padding-left: 1em;
+    border-bottom: 0.05em solid #dddddd;
+    font-size: 1.25em;
+}
+
+/* ブログアーカイブ */
+#posts {
+    border: 0.1em solid #dddddd;
+    box-shadow: 0 3px 3px rgb(0 0 0 / 22%);
+    width: 90%;
+    margin: auto;
+}
+
+#posts #entry {
+    width: 90%;
+    margin: auto;
+    border: none;
+    border-radius: none;
+}
+
+#posts a {
+    color: #121212;
+    text-decoration: none;
+}
